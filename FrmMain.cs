@@ -9,7 +9,15 @@ namespace WFA230323
         {
             InitializeComponent();
             this.Load += OnFrmMainLoad;
+            msiVevok.Click += OnMsiVevokClick;
+            msiKereso.Click += OnMsiKeresoClick;
         }
+
+        private void OnMsiKeresoClick(object? sender, EventArgs e)
+            => new FrmKereso().ShowDialog();
+
+        private void OnMsiVevokClick(object? sender, EventArgs e)
+            => new FrmVevok().ShowDialog();
 
         private void OnFrmMainLoad(object? sender, EventArgs e)
         {

@@ -28,51 +28,51 @@
         /// </summary>
         private void InitializeComponent()
         {
-            gboxJarmuTipusa = new GroupBox();
-            textBox1 = new TextBox();
-            gbVevoNeve = new GroupBox();
-            textBox2 = new TextBox();
+            gboxUI01 = new GroupBox();
+            txtJarmuTipus = new TextBox();
+            gboxUI02 = new GroupBox();
+            txtVevoNev = new TextBox();
             dgvKereso = new DataGridView();
             colJarmuNeve = new DataGridViewTextBoxColumn();
             colVevoNeve = new DataGridViewTextBoxColumn();
-            gboxJarmuTipusa.SuspendLayout();
-            gbVevoNeve.SuspendLayout();
+            gboxUI01.SuspendLayout();
+            gboxUI02.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvKereso).BeginInit();
             SuspendLayout();
             // 
-            // gboxJarmuTipusa
+            // gboxUI01
             // 
-            gboxJarmuTipusa.Controls.Add(textBox1);
-            gboxJarmuTipusa.Location = new Point(12, 12);
-            gboxJarmuTipusa.Name = "gboxJarmuTipusa";
-            gboxJarmuTipusa.Size = new Size(218, 69);
-            gboxJarmuTipusa.TabIndex = 0;
-            gboxJarmuTipusa.TabStop = false;
-            gboxJarmuTipusa.Text = "Keresés jármű neve alapján";
+            gboxUI01.Controls.Add(txtJarmuTipus);
+            gboxUI01.Location = new Point(12, 12);
+            gboxUI01.Name = "gboxUI01";
+            gboxUI01.Size = new Size(233, 69);
+            gboxUI01.TabIndex = 0;
+            gboxUI01.TabStop = false;
+            gboxUI01.Text = "Keresés jármű típusa alapján";
             // 
-            // textBox1
+            // txtJarmuTipus
             // 
-            textBox1.Location = new Point(6, 28);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(206, 29);
-            textBox1.TabIndex = 0;
+            txtJarmuTipus.Location = new Point(6, 28);
+            txtJarmuTipus.Name = "txtJarmuTipus";
+            txtJarmuTipus.Size = new Size(221, 29);
+            txtJarmuTipus.TabIndex = 0;
             // 
-            // gbVevoNeve
+            // gboxUI02
             // 
-            gbVevoNeve.Controls.Add(textBox2);
-            gbVevoNeve.Location = new Point(254, 12);
-            gbVevoNeve.Name = "gbVevoNeve";
-            gbVevoNeve.Size = new Size(218, 69);
-            gbVevoNeve.TabIndex = 0;
-            gbVevoNeve.TabStop = false;
-            gbVevoNeve.Text = "Keresés vevő neve alapján";
+            gboxUI02.Controls.Add(txtVevoNev);
+            gboxUI02.Location = new Point(282, 12);
+            gboxUI02.Name = "gboxUI02";
+            gboxUI02.Size = new Size(233, 69);
+            gboxUI02.TabIndex = 0;
+            gboxUI02.TabStop = false;
+            gboxUI02.Text = "Keresés vevő neve alapján";
             // 
-            // textBox2
+            // txtVevoNev
             // 
-            textBox2.Location = new Point(6, 28);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(206, 29);
-            textBox2.TabIndex = 0;
+            txtVevoNev.Location = new Point(6, 28);
+            txtVevoNev.Name = "txtVevoNev";
+            txtVevoNev.Size = new Size(221, 29);
+            txtVevoNev.TabIndex = 0;
             // 
             // dgvKereso
             // 
@@ -88,7 +88,7 @@
             dgvKereso.Name = "dgvKereso";
             dgvKereso.RowHeadersVisible = false;
             dgvKereso.RowTemplate.Height = 25;
-            dgvKereso.Size = new Size(460, 253);
+            dgvKereso.Size = new Size(503, 253);
             dgvKereso.TabIndex = 1;
             // 
             // colJarmuNeve
@@ -105,28 +105,28 @@
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(484, 361);
+            ClientSize = new Size(527, 361);
             Controls.Add(dgvKereso);
-            Controls.Add(gbVevoNeve);
-            Controls.Add(gboxJarmuTipusa);
+            Controls.Add(gboxUI02);
+            Controls.Add(gboxUI01);
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "FrmKereso";
             Text = "kereső";
-            gboxJarmuTipusa.ResumeLayout(false);
-            gboxJarmuTipusa.PerformLayout();
-            gbVevoNeve.ResumeLayout(false);
-            gbVevoNeve.PerformLayout();
+            gboxUI01.ResumeLayout(false);
+            gboxUI01.PerformLayout();
+            gboxUI02.ResumeLayout(false);
+            gboxUI02.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgvKereso).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private GroupBox gboxJarmuTipusa;
-        private TextBox textBox1;
-        private GroupBox gbVevoNeve;
-        private TextBox textBox2;
+        private GroupBox gboxUI01;
+        private TextBox txtJarmuTipus;
+        private GroupBox gboxUI02;
+        private TextBox txtVevoNev;
         private DataGridView dgvKereso;
         private DataGridViewTextBoxColumn colJarmuNeve;
         private DataGridViewTextBoxColumn colVevoNeve;

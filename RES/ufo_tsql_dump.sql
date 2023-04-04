@@ -1,4 +1,25 @@
-TIPUS
+-- CREATE DATABASE hasznaltufo;
+-- USE hasznaltufo;
+
+CREATE TABLE tipus(
+    tipusid INT PRIMARY KEY IDENTITY,
+    nev VARCHAR(45),
+    alapar INT);
+
+CREATE TABLE vevo(
+    vevoid INT PRIMARY KEY IDENTITY,
+    nev VARCHAR(45),
+    cim VARCHAR(45),
+    megbizhato BIT);
+
+CREATE TABLE ufo(
+    ufoid INT PRIMARY KEY IDENTITY,
+    tipus INT FOREIGN KEY REFERENCES tipus(tipusid),
+    lopott BIT,
+    serules INT,
+    foglalo INT NULL FOREIGN KEY REFERENCES vevo(vevoid));
+
+INSERT INTO tipus VALUES
 ('Nautiloid', 1300),
 ('Pleiadian', 900),
 ('Roswell', 420),
@@ -10,7 +31,7 @@ TIPUS
 ('Archer', 4000),
 ('Discovery', 3900);
 
-VEVO
+INSERT INTO vevo VALUES
 ('Arryne Marte','Crystalline Sea',0),
 ('Paulie Tiner','Axuz Military Base',0),
 ('Jamy Carte','Floating City',1),
@@ -22,7 +43,7 @@ VEVO
 ('Roge Warte','Frozen Moon',0),
 ('Stery Murphy','Floating City',0);
 
-UFO
+INSERT INTO ufo VALUES
 (1, 0, 33, 3),
 (1, 1, 14, null),
 (10, 1, 42, null),
